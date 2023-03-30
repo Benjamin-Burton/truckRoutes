@@ -227,7 +227,7 @@ def test_request(gmaps):
 
 def main():
     # googlemaps api key for authenciation - must have to use the googlemaps api
-    API_KEY = "AIzaSyDtIpsrxd4jGvwFxlDDLbKs5qLL-6kTPmg"
+    API_KEY = 
     gmaps = googlemaps.Client(key=API_KEY)
 
     # mongoDB authentication information (typically stored in a file with restricted access)
