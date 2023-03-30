@@ -1,0 +1,5 @@
+authentication:
+x.509 cert. 
+common name: benallanburton
+db: truckRoutes
+collection: exampleData
