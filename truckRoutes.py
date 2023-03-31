@@ -34,7 +34,7 @@ import googlemaps
 from datetime import datetime
 import json, csv, os
 
-def process_csv_file(infile, outfile, gmaps, duration=False):
+def process_from_csv(infile, outfile, gmaps, duration=False):
     '''
         Takes an infile in .csv format with the following header:
         StartAddress,Waypoint1,Waypoint2,Waypoint3,Waypoint4,Waypoint5,Waypoint6,EndAddress
@@ -240,12 +240,16 @@ def main():
 
     cwd = os.getcwd()
 
+    # filenames of input and output csvs in the current working directory
     infile = cwd + "\\example_infile.csv"
     outfile = cwd + "\\route plotting.csv"
 
-    process_csv_file(infile, outfile, gmaps)
+    # uncomment to process csv
+    # process_from_csv(infile, outfile, gmaps)
+    # uncomment to process mongoDB database
     # process_from_db(gmaps, uri, keyfile, db_name, collection_name)
-    # 
+    
+    # uncomment to test connectivity to the googlemaps API
     # test_request(gmaps)
 
 if __name__ == '__main__':
