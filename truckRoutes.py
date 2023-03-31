@@ -229,7 +229,6 @@ def main():
     # googlemaps api key for authenciation - must have to use the googlemaps api
     with open("api_key.txt", 'r', newline='') as api_key_file:
         API_KEY = api_key_file.readline()
-        print(API_KEY)
     gmaps = googlemaps.Client(key=API_KEY)
 
     # mongoDB authentication information (typically stored in a file with restricted access)
